@@ -1,0 +1,4 @@
+FROM ubuntu
+COPY target/native-spring-web /
+EXPOSE 8081
+CMD ["/native-spring-web"]

@@ -1,0 +1,1 @@
+mvn -Dspring.profiles.active=native -Pnative package

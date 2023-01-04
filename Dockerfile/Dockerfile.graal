@@ -1,0 +1,7 @@
+FROM ghcr.io/graalvm/graalvm-ce:latest
+WORKDIR /app
+EXPOSE 8080
+RUN echo $PATH
+ENV PATH="$PATH:/tools/apache-maven-3.8.6/bin:/opt/graalvm-ce-java17-22.3.0/bin"
+ENTRYPOINT ["java"]
+CMD ["-jar", "target/native-web-0.0.1-SNAPSHOT.jar"]

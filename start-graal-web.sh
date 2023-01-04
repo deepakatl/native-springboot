@@ -1,0 +1,1 @@
+docker run  -v /Users/deepak/Downloads/native-web:/app -v /Users/deepak/Applications:/tools -v /Users/deepak/Downloads/hello:/hello -p 8080:8080 -it --rm --name graal-spring-web graal-spring-web

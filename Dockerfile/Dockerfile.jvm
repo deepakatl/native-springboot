@@ -1,0 +1,7 @@
+FROM openjdk:17
+EXPOSE 8080
+RUN echo $PATH
+ENV PATH="$PATH:/tools/apache-maven-3.8.6/bin"
+COPY target/native-web-0.0.1-SNAPSHOT.jar app.jar
+ENTRYPOINT ["java"]
+CMD ["-jar", "app.jar"]

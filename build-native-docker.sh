@@ -1,0 +1,1 @@
+docker build -f Dockerfile/Dockerfile.native -t native-spring-web .

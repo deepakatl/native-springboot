@@ -1,0 +1,1 @@
+docker run  -v /Users/deepak/Downloads/native-web:/app -v /Users/deepak/Applications:/tools -v /Users/deepak/Downloads/hello:/hello -p 8081:8081 -it --rm --name native-spring-web native-spring-web
